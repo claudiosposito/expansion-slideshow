@@ -2,20 +2,21 @@
 <html>
   <head>
     <meta http-equiv="refresh" content="61">
-    <title>User Login</title>
+    <title>Australia Dashboard</title>
     <style type="text/css">
       body {
         overflow:hidden;
         width:100%;
         width:100%;
+        background:black;
       }
       .tableauPlaceholder {
         position:absolute;
         overflow:hidden;
         width:1000px;
         height:1000px;
-        left:0px;
-        top:0px;
+        left:50px;
+        top:25px;
       }
       .tableauViz {
         position:absolute ;
@@ -23,12 +24,11 @@
         width:1000px;
         height:1000px;
         left:50px;
-        top:0px;
       }
       .country-carousel {
         position:absolute;
         z-index:2;
-        top:300px;
+        top:330px;
         width:102%;
         left:-1%;
         height:700px;
@@ -93,7 +93,7 @@
           font-family:Helvetica Neue;
           z-index:10;
           font-weight:bold;
-          background-color: rgba(0,0,0,.5);
+          background-color: rgba(0,0,0,.7);
           height:120px;
           padding:20px;
           text-align:right;
@@ -202,8 +202,9 @@ function initiateSlideshow() {
 
 </script>
   </head>
-  <body onload="initiateSlideshow();">
-<script type='text/javascript' src='http://tableau.sam-app.ro/javascripts/api/viz_v1.js'></script><div id='container'><div class='tableauPlaceholder'><object class='tableauViz' style='display:none;'><param name='host_url' value='http%3A%2F%2Ftableau.sam-app.ro%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;acquisition' /><param name='name' value='AUSDashboardEmbedded&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='no' /><param name='showAppBanner' value='false' /></object></div></div>
+  <body onload="initiateSlideshow();setInterval(plusSlides,20000);">
+<!--<script type='text/javascript' src='http://tableau.sam-app.ro/javascripts/api/viz_v1.js'></script><div id='container'><div class='tableauPlaceholder'><object class='tableauViz' style='display:none;'><param name='host_url' value='http%3A%2F%2Ftableau.sam-app.ro%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;acquisition' /><param name='name' value='AUSDashboardEmbedded&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='no' /><param name='showAppBanner' value='false' /></object></div></div>  -->
+<script type='module' src='https://dub01.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script><div id='container'><div class='tableauPlaceholder'><tableau-viz id='tableau-viz' src='https://dub01.online.tableau.com/t/sumupglobal/views/AUSScreenDashboard/Dashboard' width='1000' height='1000' hide-tabs toolbar='bottom' ></tableau-viz></div></div>
 
     <div class='country-carousel'><param name='country' value='Australia'/>
       <div class="slideshow-container">
