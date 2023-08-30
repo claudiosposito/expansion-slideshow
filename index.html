@@ -17,7 +17,7 @@
       .tableauPlaceholder {
         position:absolute;
         overflow:hidden;
-        width:1000px;
+        width:1200px;
         height:1000px;
         left:50px;
         top:25px;
@@ -25,7 +25,7 @@
       .tableauViz {
         position:absolute ;
         overflow:hidden;
-        width:1000px;
+        width:1200px;
         height:1000px;
         left:50px;
       }
@@ -209,7 +209,7 @@ function initiateSlideshow() {
   <body onload="initiateSlideshow();setInterval(plusSlides,20000);">
     <!--<div id='mode-box'>Night mode</div>-->
 <!--<script type='text/javascript' src='http://tableau.sam-app.ro/javascripts/api/viz_v1.js'></script><div id='container'><div class='tableauPlaceholder'><object class='tableauViz' style='display:none;'><param name='host_url' value='http%3A%2F%2Ftableau.sam-app.ro%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;acquisition' /><param name='name' value='AUSDashboardEmbedded&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='no' /><param name='showAppBanner' value='false' /></object></div></div>  -->
-<script type='module' src='https://dub01.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script><div id='container'><div class='tableauPlaceholder'><tableau-viz id='tableau-viz' src='https://dub01.online.tableau.com/t/sumupglobal/views/AUSScreenDashboard/Dashboard' width='1000' height='1000' hide-tabs toolbar='bottom' ></tableau-viz></div></div>
+<script type='module' src='https://dub01.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script><div id='container'><div class='tableauPlaceholder'><tableau-viz id='tableau-viz' src='https://dub01.online.tableau.com/t/sumupglobal/views/AUSScreenDashboard/Dashboard' width='1200' height='1000' hide-tabs toolbar='bottom' ></tableau-viz></div></div>
 
 <input type="checkbox" id="dark-mode" checked onclick='moveLabel()'>
 <label for="dark-mode"><p id="dmLabel">Dark</p></label>
